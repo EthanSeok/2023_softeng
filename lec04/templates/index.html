@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>첫번째 크기 헤드라인</h1>
+<h2>두번째 크기 헤드라인</h2>
+<h3>세번째 크기 헤드라인</h3>
+<h4>네번째 크기 헤드라인</h4>
+<h5>다섯번째 크기 헤드라인</h5>
+
+<button onclick="whatTimeIsIt()">현재시간</button>
+<hr/>
+
+<label for="inputA">a</label>
+<input id="inputA" value=1 onkeyup="doSomething()">
+<label for="inputB">b</label>
+<input id="inputB" value=2 onkeyup="doSomething()">
+
+<p><span id="valueA">1</span> + <span id="valueB">2</span> = <span id="valueC">3</span>입니다.</p>
+
+<p>문단은 p로 쓰세요. p는 아마도 Paragraph의 앞 자를 따 온 것이겠죠?</p>
+<a href="https://www.google.com">Go to google</a>
+<hr />
+<img src="../static/images/lettuce_price.png" width="600px">
+
+<!--<script>-->
+<!--    function whatTimeIsIt() {-->
+<!--    alert(new Date());-->
+<!--}-->
+<!--</script>-->
+{% endblock %}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>석승원의 개인 홈페이지</title>
+    <link href="{{ url_for('static', filename='practice.css')}}" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="{{ url_for('static', filename='what_time_is_it.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='add_two_number.js')}}"></script>
+    <!--javascipt block-->
+<!--    {% block javascript %}{% endblock %}-->
+</head>
+<body>
+<nav>
+    <a href="{{ url_for('index')}}">홈</a>
+    <a href="{{ url_for('blog')}}">블로그</a>
+    <a href="{{ url_for('about')}}">소개</a>
+</nav>
+
+<!--Main content block-->
+{% block content %}{% endblock %}
+</body>
+</html>
