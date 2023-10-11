@@ -6,12 +6,13 @@
     <link href="{{ url_for('static', filename='practice.css')}}" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="{{ url_for('static', filename='what_time_is_it.js')}}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='add_two_number.js')}}"></script>
+    <script src="https://kit.fontawesome.com/892bb6cef2.js" crossorigin="anonymous"></script>
     <!--javascipt block-->
 <!--    {% block javascript %}{% endblock %}-->
 </head>
 <body>
 <nav>
-    <a href="{{ url_for('index')}}">홈</a>
+    <a href="{{ url_for('index')}}"><i class="fa-solid fa-house">홈</i></a>
     <a href="{{ url_for('blog')}}">블로그</a>
     <a href="{{ url_for('about')}}">소개</a>
 </nav>
